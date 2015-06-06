@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="labs.master.cs" Inherits="labs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Labs</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <h1>
+        Geoffrey Mok</h1>
+    <hr />
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <hr />
+    <p align="center">
+        <asp:HyperLink ID="hlLabs" runat="server" NavigateUrl="~/labs/Default.aspx">Labs</asp:HyperLink>
+         | 
+        <asp:HyperLink ID="hlHome" runat="server" NavigateUrl="~/default.aspx">Home</asp:HyperLink>
+         | 
+        <asp:HyperLink ID="hlCourse" runat="server" NavigateUrl="http://warp.senecac.on.ca/ian/start.aspx">INT422 Home</asp:HyperLink>
+    </p>
+    </form>
+</body>
+</html>

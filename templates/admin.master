@@ -1,0 +1,13 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/templates/standard.master" AutoEventWireup="false"
+    CodeFile="admin.master.cs" Inherits="templates_admin" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <asp:ContentPlaceHolder ID="headContent" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="header" runat="Server">
+    Administrator Page
+    <asp:ContentPlaceHolder ID="headerContent" runat="server" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <asp:ContentPlaceHolder ID="mainContent" runat="server" />
+</asp:Content>

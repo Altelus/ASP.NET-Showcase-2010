@@ -1,0 +1,280 @@
+table, td
+{
+	border-width: 1px;
+	border-style: solid;
+}
+
+table
+{
+	width: 950px;
+}
+
+td
+{
+	background-color: #FFFFCC;
+}
+
+h1, h2
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #0033CC;
+}
+
+hr
+{
+	width: 600px;
+}
+
+.center
+{
+	text-align: center;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+#menu
+{
+	background: url('../images/main-menu.png') no-repeat;
+	width: 198px;
+	height: 324px;
+}
+
+#home 
+{
+	float: left;
+	width : 53px;
+	height: 18px;
+	margin-left: 76px;
+	margin-top: 83px;
+}
+
+#text 
+{
+	float: left;
+	width : 128px;
+	height: 20px;
+	margin-left: 39px;
+	margin-top: 17px;
+}
+
+#table 
+{
+	float: left;
+	width : 142px;
+	height: 16px;
+	margin-left: 34px;
+	margin-top: 15px;
+}
+
+#list 
+{
+	float: left;
+	width : 136px;
+	height: 18px;
+	margin-left: 34px;
+	margin-top: 18px;
+}
+
+#guest 
+{
+	float: left;
+	width : 85px;
+	height: 18px;
+	margin-left: 60px;
+	margin-top: 15px;
+}
+
+#honesty 
+{
+	float: left;
+	width : 66px;
+	height: 18px;
+	margin-left: 72px;
+	margin-top: 15px;
+}
+
+#zenit 
+{
+	float: left;
+	width : 117px;
+	height: 20px;
+	margin-left: 45px;
+	margin-top: 14px;
+}
+
+#links
+{
+	border-width: 1px;
+	border-style: solid;
+	text-align: center;
+	width: 700px;
+}
+
+#links td
+{
+	background-color: #FFFFFF;
+}
+
+#text1
+{
+	font-family: Arial;
+}
+
+#text2
+{
+	font-family: 'Comic Sans MS';
+}
+
+#text3
+{
+	font-family: 'Lucida Sans';
+}
+
+#text4
+{
+	font-family: Pristina;
+}
+
+#table1
+{
+	text-align: center;
+	width: 700px;
+	height: 500px;
+}
+
+#table2
+{
+	text-align: center;
+	width: 700px;
+}
+
+#table2 table td
+{
+	border-style: solid;
+	border-width: 1px;
+	text-align: center;
+}
+
+#table2 table
+{
+	width: 300px;
+}
+
+#table3
+{
+	text-align: center;
+	width: 200px;
+	height: 100px;
+}
+
+#table4
+{
+	width: 400px;
+	height: 400px;
+}
+
+.top
+{
+	vertical-align: top;
+}
+
+.mid
+{
+	vertical-align: middle;
+}
+
+.bot
+{
+	vertical-align: bottom;
+}
+
+.l
+{
+	text-align: left;
+}
+
+.c
+{
+	text-align: center;
+}
+
+.r
+{
+	text-align: right;
+}
+
+.list
+{
+	width: 700px;
+}
+
+#submenu
+{
+	background: url( '../images/sub-menu.png' ) no-repeat;
+	width: 198px;
+	height: 204px;
+}
+
+#welcome
+{
+	float: left;
+	width : 68px;
+	height: 17px;
+	margin-left: 64px;
+	margin-top: 54px;
+}
+
+#view
+{
+	float: left;
+	width : 117px;
+	height: 19px;
+	margin-left: 40px;
+	margin-top: 16px;
+}
+
+#sign
+{
+	float: left;
+	width : 117px;
+	height: 19px;
+	margin-left: 40px;
+	margin-top: 16px;
+}
+
+#index
+{
+	float: left;
+	width : 49px;
+	height: 16px;
+	margin-left: 74px;
+	margin-top: 35px;
+}
+
+.menuhr
+{
+	float: left;
+	width: 198px;
+}
+
+#options
+{
+	border-style: none;
+	text-align: center;
+	width: 198px;
+}
+
+#options td
+{
+	border-style: none;
+	background-color: #FFFFFF;
+}
+
+#form td
+{
+	background-color: #FFFFFF;
+	border-style: none;
+}

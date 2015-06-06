@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/App_Data/google.gif</ImageUrl>
+    <NavigateUrl>http://www.google.com</NavigateUrl>
+    <AlternateText>Visit Google.com</AlternateText>
+    <Impressions>80</Impressions>
+    <Keyword>search</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/App_Data/yahoo.gif</ImageUrl>
+    <NavigateUrl>http://www.yahoo.com</NavigateUrl>
+    <AlternateText>Visit yahoo.com</AlternateText>
+    <Impressions>80</Impressions>
+    <Keyword>search</Keyword>
+  </Ad>
+</Advertisements>

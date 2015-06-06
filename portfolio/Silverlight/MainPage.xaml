@@ -1,0 +1,69 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" xmlns:ContentViewer_Digital="clr-namespace:ContentViewer.Digital" xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data" xmlns:controlsToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Toolkit" xmlns:local="clr-namespace:ContentViewer" x:Class="ContentViewer.MainPage"
+    d:DesignWidth="500" d:DesignHeight="550" Width="500" Height="600">
+    <UserControl.Resources>
+        <ContentViewer_Digital:DigitalContent x:Key="DigitalContentDataSource" d:IsDataSource="True"/>
+    </UserControl.Resources>
+	<Grid x:Name="LayoutRoot" Height="600" Width="500" Background="Black" DataContext="{Binding Source={StaticResource DigitalContentDataSource}}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="40"/>
+			<RowDefinition Height="175"/>
+			<RowDefinition Height="175"/>
+			<RowDefinition Height="175"/>
+			<RowDefinition Height="35"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="250"/>
+			<ColumnDefinition Width="250"/>
+		</Grid.ColumnDefinitions>
+
+        
+		<Border Margin="8" BorderBrush="#FFFEF2F2" BorderThickness="1" Grid.Row="1" Background="#FF07070C">
+			<Image x:Name="img1" Margin="7" />
+		</Border>
+		<Border Margin="8,10,8,7" Grid.Column="1" BorderThickness="1" Grid.Row="1" Background="#FF07070C" BorderBrush="#FFFAFAFA">
+			<Image x:Name="img2" Margin="7" d:LayoutOverrides="VerticalAlignment"/>
+		</Border>
+		<Border Margin="8,8,8,6.5" Grid.Row="2" BorderBrush="#FFFEF2F2" BorderThickness="1" Background="#FF07070C">
+			<Image x:Name="img3" Margin="7"/>
+		</Border>
+		<Border Margin="8,8,8,6.5" Grid.Column="1" Grid.Row="2" BorderBrush="#FFFEF2F2" BorderThickness="1" Background="#FF07070C">
+			<Image x:Name="img4" Margin="7"/>
+		</Border>
+		<Border Margin="8,8,8,7" Grid.Row="3" BorderBrush="#FFFEF2F2" BorderThickness="1" Background="#FF07070C">
+			<Image x:Name="img5" Margin="7"/>
+		</Border>
+		<Border Margin="8,8,8,7" Grid.Column="1" Grid.Row="3" BorderBrush="#FFFEF2F2" BorderThickness="1" Background="#FF07070C">
+			<Image x:Name="img6" Margin="7"/>
+		</Border>
+		<Button x:Name="btnNext" Margin="8,8,0,8" Grid.Row="4" Content="Next" Grid.Column="1" Click="btnNext_Click" HorizontalAlignment="Left" Width="74" d:LayoutOverrides="GridBox"/>
+		<Button x:Name="btnPrev" Margin="0,8,8,8" Grid.Row="4" Content="Previous" Click="btnPrev_Click" HorizontalAlignment="Right" Width="70" RenderTransformOrigin="0.507,0.545" d:LayoutOverrides="GridBox"/>
+		<TextBlock x:Name="tbkMax" Margin="0,25,-117,41" TextWrapping="Wrap" Grid.Row="3" HorizontalAlignment="Right" Width="234" d:IsHidden="True" Visibility="Collapsed"/>
+		<TextBlock x:Name="tbkError" Margin="8,8,72,-4" TextWrapping="Wrap" Foreground="#FF507CD1" Grid.RowSpan="3" Grid.Row="1" Grid.ColumnSpan="2" d:IsHidden="True" Visibility="Collapsed"/>
+		<Button x:Name="btnFirst" HorizontalAlignment="Left" Margin="8,8,0,8" Width="75" Content="&lt;&lt;" Grid.Row="4" Click="btnFirst_Click" d:LayoutOverrides="GridBox"/>
+		<Button x:Name="btnLast" HorizontalAlignment="Right" Margin="0,8,8,8" Width="75" Content="&gt;&gt;" Grid.Row="4" Grid.Column="1" Click="btnLast_Click" d:LayoutOverrides="GridBox"/>
+		<TextBlock x:Name="tbkTest" Margin="21,30,59,18" Grid.Row="2" Text="TextBlock" TextWrapping="Wrap" Foreground="#FF40E429" Grid.ColumnSpan="2" d:IsHidden="True" Visibility="Collapsed"/>
+		<TextBox x:Name="tbSearch" Margin="8,8,87,8" Grid.Column="1" TextWrapping="Wrap" TextChanged="tbSearch_TextChanged"/>
+		<Button x:Name="btnSearch" HorizontalAlignment="Right" Margin="0,8,8,8" Width="75" Content="Search" Grid.Column="1" d:LayoutOverrides="Height" Click="btnSearch_Click"/>
+		<TextBlock x:Name="tbkResults" Margin="8" TextWrapping="Wrap" Foreground="#FF44AFB3"/>
+		<MediaElement x:Name="media1" Grid.Row="1" Margin="8,10,8,8"/>
+		<MediaElement x:Name="media2" Grid.Column="1" Grid.Row="1" Margin="8,10,8,8"/>
+		<MediaElement x:Name="media3" Grid.Row="2" Margin="8,8,8,6"/>
+		<MediaElement x:Name="media4" Margin="8,8,8,6" Grid.Column="1" Grid.Row="2"/>
+		<MediaElement x:Name="media5" Grid.Row="3" Margin="8,8,8,7"/>
+		<MediaElement x:Name="media6" Grid.Column="1" Grid.Row="3" Margin="8,8,8,7"/>
+		
+		<Border x:Name="bdr1" Opacity="0" Grid.Row="1" Background="#FFFEFEFE" BorderBrush="Black" BorderThickness="1" MouseLeftButtonUp="bdr1_MouseLeftButtonUp"/>
+		<Border x:Name="bdr2" Opacity="0" Grid.Column="1" Grid.Row="1" Background="#FFFEFEFE" BorderBrush="Black" BorderThickness="1" MouseLeftButtonUp="bdr2_MouseLeftButtonUp"/>
+		<Border x:Name="bdr3" Opacity="0" Grid.Row="2" Background="#FFFEFEFE" BorderBrush="Black" BorderThickness="1" MouseLeftButtonUp="bdr3_MouseLeftButtonUp"/>
+		<Border x:Name="bdr4" Margin="0,0,8,0" Opacity="0" Grid.Column="1" Grid.Row="2" Background="#FFFEFEFE" BorderBrush="Black" BorderThickness="1" MouseLeftButtonUp="bdr4_MouseLeftButtonUp"/>
+		<Border x:Name="bdr5" Margin="8,0,0,0" Opacity="0" Grid.Row="3" Background="#FFFEFEFE" BorderBrush="Black" BorderThickness="1" MouseLeftButtonUp="bdr5_MouseLeftButtonUp"/>
+		<Border x:Name="bdr6" Opacity="0" Grid.Column="1" Grid.Row="3" Background="#FFFEFEFE" BorderBrush="Black" BorderThickness="1" MouseLeftButtonUp="bdr6_MouseLeftButtonUp"/>
+        <local:DetailsView x:Name="DetailsView" Grid.ColumnSpan="2" Grid.RowSpan="5" Visibility="Collapsed"/>
+
+        
+	</Grid>
+</UserControl>

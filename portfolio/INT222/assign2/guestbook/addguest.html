@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <link rel='stylesheet' href='../css/sitecss.css' type='text/css' media='screen' />
+	<title>Sign Guestbook</title>
+</head>
+
+<body>
+	<form name="guests" action="http://zenit.senecac.on.ca/~emile.ohan/cgi-bin/guestbook.cgi" method ="post">
+        <table id = "form">
+            <tr>
+                <td>Name:</td>
+		        <td><input size='60' maxlength = "40" type='text' name='guest' /><br/></td>
+            </tr>
+            <tr>
+                <td>E-mail address:</td>
+		        <td><input size='60' maxlength = "60" type='text' name='email' /><br/></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+		        <td><input size='40' maxlength = "30" type='text' name='city' /><br/></td>
+            </tr>
+            <tr>
+                <td>Province:</td>
+		        <td>
+		            <select name="province"  size='15'>
+		                <optgroup label='Provinces'>
+                            <option value='Alberta'>Alberta</option>
+                            <option value='British Columbia'>British Columbia</option>
+                            <option value='Manitoba'>Manitoba</option>
+                            <option value='New Brunswick'>New Brunswick</option>
+                            <option value='Newfoundland and Labrador'>Newfoundland and Labrador</option>
+                            <option value='Nova Scotia'>Nova Scotia</option>
+                            <option value='Ontario' selected='selected'>Ontario</option>
+                            <option value='Prince Edward Island'>Prince Edward Island</option>
+                            <option value='Quebec'>Quebec</option>
+                            <option value='Saskatchewan'>Saskatchewan</option>
+                        </optgroup>
+                        <optgroup label='Territories'>
+                            <option value='Northwest Territories'>Northwest Territories</option>
+                            <option value='Nunavut'>Nunavut</option>
+                            <option value='Yukon'>Yukon</option>
+                        </optgroup>
+		            </select>
+		        </td>
+            </tr>
+            <tr>
+                <td>Web Page URL:</td>
+		        <td><input size='60' maxlength = "60" type='text' name='web_url' /><br/></td>
+            </tr>
+            <tr>
+                <td>Web Page Title:</td>
+		        <td><input size='60' maxlength = "60" type='text' name='web_title' /><br/></td>
+            </tr>
+            <tr>
+                <td>Comments:</td>
+		        <td>
+		            <textarea name='comments' rows='3' cols='60'>
+                    </textarea>
+                </td>
+            </tr>
+  	    </table>
+  	    <input type='submit' value='Submit'/>
+        <input type='reset' value='Clear'/>  
+	</form>
+
+</body>
+</html>

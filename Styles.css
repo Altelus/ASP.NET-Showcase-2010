@@ -1,0 +1,76 @@
+﻿body
+{
+	font-family: arial,helvetica,sans-serif;
+	font-size: 12px;
+	background-color: #507CD1;
+}
+#wrapper
+{
+    width: 950px;
+    margin: 0px auto;
+    border: 1px solid #bbb;
+    padding: 10px;
+    background-color: white;
+}
+#top
+{
+	border: 1px solid #bbb;
+	height: 80px;
+	padding: 10px;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+	text-transform: uppercase;
+}
+
+#content
+{
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+#content div
+{
+	padding: 10px;
+	border: 1px solid #bbb;
+	float: left;
+}
+#content-left
+{
+	width: 165px;
+}
+#content-main
+{
+	margin-left: 10px;
+	width: 550px;
+}
+#content-right
+{
+	margin-left: 10px;
+	width: 149px;
+}
+#footer
+{
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #bbb;
+	width: 878px;
+}
+#bottom
+{
+	clear: both;
+	text-align: right;
+}
+#TBI
+{
+	color: #FF0000;
+	font-style: italic;
+	font-size: small;
+	font-family: 'Lucida Sans';
+}
+#banner
+{
+    font-family: 'Copperplate Gothic Bold';
+    font-size: 22px;
+}

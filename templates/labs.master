@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/templates/standard.master" AutoEventWireup="true"
+    CodeFile="labs.master.cs" Inherits="templates_labs" %>
+
+<%@ Register Src="../SyntaxHighlighter.ascx" TagName="SyntaxHighlighter" TagPrefix="uc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+
+    <script type="text/javascript" src="../SyntaxHighlighter/scripts/shCore.js"></script>
+
+    <script type="text/javascript" src="../SyntaxHighlighter/scripts/shBrushCSharp.js"></script>
+
+    <script type="text/javascript" src="../SyntaxHighlighter/scripts/shBrushBash.js"></script>
+
+    <script type="text/javascript" src="../SyntaxHighlighter/scripts/shBrushCpp.js"></script>
+
+    <script type="text/javascript" src="../SyntaxHighlighter/scripts/shBrushPlain.js"></script>
+
+    <script type="text/javascript" src="../SyntaxHighlighter/scripts/shBrushXml.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="../SyntaxHighlighter/styles/shCore.css" />
+    <link type="text/css" rel="stylesheet" href="../SyntaxHighlighter/styles/shThemeDefault.css" />
+
+    <script type="text/javascript">
+        SyntaxHighlighter.config.clipboardSwf = '../SyntaxHighlighter/scripts/clipboard.swf';
+        SyntaxHighlighter.defaults['wrap-lines'] = false;
+        SyntaxHighlighter.all()
+    </script>
+
+    <asp:ContentPlaceHolder ID="headContent" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="header" runat="Server">
+    <p>
+        Public Page</p>
+    <asp:ContentPlaceHolder ID="headerContent" runat="server" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <asp:ContentPlaceHolder ID="mainContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <br />
+    <asp:LoginView ID="LoginView1" runat="server">
+        <LoggedInTemplate>
+            <uc1:SyntaxHighlighter ID="SyntaxHighlighter1" runat="server" />
+        </LoggedInTemplate>
+    </asp:LoginView>
+</asp:Content>

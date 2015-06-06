@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Home" description="Home" url="~/default.aspx">
+    <siteMapNode title="Lab Exercises" description="INT422 Lab Exercises" url="~/labs/default.aspx" />
+    <siteMapNode title="Work Portfolio" description="View my work portfolio" url="~/portfolio/default.aspx" />
+    <siteMapNode title="Public Activities" roles="*">
+      <siteMapNode title="Browse Database" description="View Database" url="~/public/DBBrowse.aspx" />
+      <siteMapNode title="Content Viewer" description="Media Gallery" url="~/public/contentviewer.aspx" />
+      <siteMapNode title="Contact Me" description="Contact Info" url="~/public/contact.aspx" />
+    </siteMapNode>
+    <siteMapNode title="Member Activities" roles="Member,Administrator">
+      <siteMapNode title="Update Account" description="Update your account" url="~/member/updatemyaccount.aspx" />
+    </siteMapNode>
+    <siteMapNode title="Admin Activities" roles="Administrator">
+      <siteMapNode title="Upload to DB" description="Upload content to Database" url="~/admin/UploadToDB.aspx" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
