@@ -1,2 +1,4 @@
 # ASP.NET-Showcase-2010
-ASP.NET Showcase website with Silverlight content-viewer; ASP.NET, C#
+Showcase website developed using; ASP.NET, Silverlight, C#, & MS SQL
+
+Implemented Silverlight Media gallery with database connectivity
